@@ -4,9 +4,10 @@
   <h3 class="{{headerClass}}"><span class="fa fa-fw fa-mortar-board"></span>&nbsp;{{{sectionTitle "Education"}}}</h3>
   <div class="{{contentClass}}">
     {{#each r.education.history}}
-      <h4><strong>{{studyType}}</strong>, {{#if url}}<a href="{{{url}}}">{{institution}}</a>{{else}}{{institution}}{{/if}}</h4>
+      <h4><strong>{{title}}</strong>, {{#if url}}<a href="{{{url}}}">{{institution}}</a>{{else}}{{institution}}{{/if}}</h4>
       {{#if area}}<h5>{{area}}</h5>{{/if}}
-      {{formatDate safe.start 'YYYY-MM'}}&mdash;{{formatDate safe.end 'YYYY-MM'}}
+      <strong>{{formatDate safe.start 'YYYY-MM'}}&mdash;{{formatDate safe.end 'YYYY-MM'}}</strong>
+      {{#if summary}}<p>{{{summary}}}</p>{{/if}}
       {{#if curriculum}}
         <ul>
         {{#each curriculum}}

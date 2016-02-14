@@ -1,0 +1,13 @@
+{{#section 'languages'}}
+<hr>
+<section class="row">
+  <h3 class="{{headerClass}}"><span class="fa fa-fw fa-weixin"></span>&nbsp;{{{sectionTitle "Languages"}}}</h3>
+  <div class="{{contentClass}}">
+    {{#each r.languages}}
+      <h4><strong>{{language}}</strong></h4>
+      {{#if level}}<h5>{{{level}}}</h5>{{/if}}
+      {{#unless @last}}<div>&nbsp;</div>{{/unless}}
+    {{/each}}
+  </div>
+</section>
+{{/section}}

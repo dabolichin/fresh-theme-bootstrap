@@ -9,7 +9,7 @@
       {{else}}
       <h4><strong>{{role}}</strong>, {{title}}</h4>
       {{/if}}
-      {{formatDate safe.start 'YYYY-MM'}}&mdash;{{#if current}}Present{{else}}{{formatDate safe.end 'YYYY-MM'}}{{/if}}
+      <strong>{{formatDate safe.start 'YYYY-MM'}}&mdash;{{#if current}}Present{{else}}{{formatDate safe.end 'YYYY-MM'}}{{/if}}</strong>
       {{{summary}}}
       {{#if highlights}}
         <ul>
