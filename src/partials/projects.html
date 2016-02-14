@@ -5,9 +5,9 @@
   <div class="{{contentClass}}">
     {{#each r.projects}}
       {{#if url}}
-      <h4><strong>{{role}}</strong>, <a href="{{{url}}}">{{title}}</a></h4>
+      <h4><strong>{{role}}</strong>,<br><a href="{{{url}}}">{{title}}</a></h4>
       {{else}}
-      <h4><strong>{{role}}</strong>, {{title}}</h4>
+      <h4><strong>{{role}}</strong>,<br>{{title}}</h4>
       {{/if}}
       <strong>{{formatDate safe.start 'YYYY-MM'}}&mdash;{{#if current}}Present{{else}}{{formatDate safe.end 'YYYY-MM'}}{{/if}}</strong>
       {{{summary}}}
