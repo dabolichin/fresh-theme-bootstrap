@@ -9,7 +9,7 @@
       {{else}}
       <h4><strong>{{position}}</strong>,<br>{{employer}}</h4>
       {{/if}}
-      <strong>{{formatDate safe.start 'YYYY-MM'}}&mdash;{{#if current}}Present{{else}}{{formatDate safe.end 'YYYY-MM'}}{{/if}}</strong>
+      <strong>{{formatDate safe.start 'YYYY-MM'}}&mdash;{{#if end}}{{formatDate safe.end 'YYYY-MM'}}{{else}}Now{{/if}}</strong>
       {{{summary}}}
       {{#if highlights}}
         <ul>
